@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         HandleMovemenet();
     }
@@ -27,13 +27,5 @@ public class Player : MonoBehaviour
         transform.Translate(movement * Time.deltaTime);
     }
 
-    void HandleJump()
-    {
-        // Handle player jump logic here
-    }
 
-    void HandleAttack()
-    {
-        // Handle player attack logic here
-    }
 }
